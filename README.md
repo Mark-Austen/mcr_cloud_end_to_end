@@ -46,7 +46,7 @@ This example deploys end-to-end multicloud connectivity between an AWS VPC, Azur
 * From the command line change to the directory containing the Terraform files.
 * Run `terraform init` to initialise Terraform and the providers.
 * Run `terraform apply` to deploy this example.
-* Gatus test agent stats are available using the public IP address allocted to the VM - http://<public ip address>
+* Gatus test agent stats are available using the public IP address allocted to the VM - http://vm_public_ip_address
 
 ### Notes
 
