@@ -1,4 +1,4 @@
-This example deploys end-to-end multicloud connectivity between an AWS VPC, Azure VNet, and Google Cloud VPC using the Megaport Cloud Router (MCR). The following resources are deployed:
+This example deploys end-to-end multicloud connectivity between an AWS VPC, Azure VNet, and Google Cloud VPC using the Megaport Cloud Router (MCR). Test VMs are deployed in each cloud running the a Gatus test agent, latency and reachablity stats are available on a dashboard for each VM.
 
 * Megaport Cloud Router (MCR)
 * Megaport Virtual Cross Connect (VXC) to AWS Direct Connect
@@ -8,6 +8,7 @@ This example deploys end-to-end multicloud connectivity between an AWS VPC, Azur
 * AWS Direct Connect to Virtual Private Gateway Association
 * AWS VPC
 * AWS VPC Subnet
+* AWS EC2 VM instance running a Gatus test agent
 * Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
 * Azure Resource Group
 * Azure ExpressRoute Circuit
@@ -15,11 +16,13 @@ This example deploys end-to-end multicloud connectivity between an AWS VPC, Azur
 * Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
 * Azure VNet
 * Azure VNet Subnet
+* Azure VM running a Gatus test agent
 * Megaport Virtual Cross Connect (VXC) to Google Cloud Partner Interconnect VLAN Attachment
 * Google Cloud Partner Interconnect VLAN Attachment
 * Google Cloud Router
 * Google Cloud VPC
 * Google Cloud VPC Subnet
+* Google Cloud Compute VM running a Gatus test agent
 
 ### Prerequisites
 
@@ -43,6 +46,7 @@ This example deploys end-to-end multicloud connectivity between an AWS VPC, Azur
 * From the command line change to the directory containing the Terraform files.
 * Run `terraform init` to initialise Terraform and the providers.
 * Run `terraform apply` to deploy this example.
+* Gatus test agent stats are available using the public IP address allocted to the VM - http://<public ip address>
 
 ### Notes
 
